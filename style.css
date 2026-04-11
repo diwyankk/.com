@@ -109,6 +109,12 @@ footer{
     margin-top:20px;
     font-size:12px;
     opacity:0.6;
+}
+/* FOOTER */
+footer{
+    margin-top:20px;
+    font-size:12px;
+    opacity:0.6;
 }/* Click animation */
 .card:active{
     transform:scale(0.95);
