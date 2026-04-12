@@ -1,6 +1,6 @@
 // script.js
 
-// loading animation logic
+// page load hone par loader hide karne ka logic
 window.addEventListener('load', () => {
     setTimeout(() => {
         const loader = document.getElementById('loader');
@@ -11,24 +11,17 @@ window.addEventListener('load', () => {
     }, 1500);
 });
 
-// dark and light mode button logic
-const themeBtn = document.getElementById('theme-btn');
-themeBtn.addEventListener('click', () => {
+// dark and light mode automatically badalna
+setInterval(() => {
     const body = document.body;
-    const icon = themeBtn.querySelector('i');
-    
     if (body.classList.contains('light-mode')) {
         body.classList.remove('light-mode');
         body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
     } else {
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
     }
-});
+}, 10000);
 
 // bgmi id copy functionality
 function copyBGMI() {
@@ -41,6 +34,6 @@ function copyBGMI() {
             textElement.innerText = originalText;
         }, 2000);
     }).catch(err => {
-        console.error(err);
+        console.error('Copy fail ho gaya', err);
     });
 }
