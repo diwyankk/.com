@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>@diwyank</title>
-
-<link rel="stylesheet" href="style.css">
-
-<!-- Better font -->
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio @diwyank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="light">
+<body class="light-mode">
+    
+    <button id="theme-btn" class="theme-btn glass-card"><i class="fas fa-moon"></i></button>
 
-<div class="bg"></div>
+    <div id="loader" class="glass-loader">
+        <h2>Loading...</h2>
+    </div>
 
-<div class="main">
+    <div class="container">
+        <header class="profile-section">
+            <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+            <h1 class="username">@diwyank</h1>
+            <p class="intro">Passionate about coding cricket and chess. I find my flow in book reading and arts driven by constant creativity. Deeply interested in psychology and forever curious about outer space stars galaxies and exoplanets.</p>
+        </header>
 
-    <!-- PROFILE -->
-    <div class="profile">
-        <div class="img-wrap">
-            <img src="https://i.supaimg.com/6d8d0b28-e4eb-4552-a599-a6977311fa70/97527604-6567-455b-9195-63fc8a790a52.jpg">
+        <main class="links-grid">
+            <a href="https://www.instagram.com/diwyankk" target="_blank" class="glass-card"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://t.me/Anavvww" target="_blank" class="glass-card"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="https://x.com/anavvww" target="_blank" class="glass-card"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.snapchat.com/add/shaitan_diwyank" target="_blank" class="glass-card"><i class="fab fa-snapchat"></i> Snapchat</a>
+            <a href="https://pin.it/2IsQMo3qR" target="_blank" class="glass-card"><i class="fab fa-pinterest"></i> Pinterest</a>
+            <a href="mailto:diwyankk@gmail.com" target="_blank" class="glass-card"><i class="fas fa-envelope"></i> Gmail</a>
+            <a href="https://www.imdb.com/user/p.mivbmay4ivn6blzajgsg2g66cy" target="_blank" class="glass-card"><i class="fab fa-imdb"></i> IMDb</a>
+            <a href="https://shealth.samsung.com/deepLink?sc_id=app.main&action=view&destination=together&qr=UPC8BTRGR3" target="_blank" class="glass-card"><i class="fas fa-heartbeat"></i> Samsung Health</a>
+            <a href="https://github.com/anavvww" target="_blank" class="glass-card"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.reddit.com/user/Longjumping_Cookie93" target="_blank" class="glass-card"><i class="fab fa-reddit"></i> Reddit</a>
+            <a href="https://m.facebook.com/diwyankk/" target="_blank" class="glass-card"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://maps.app.goo.gl/w6KXQHFZ8BGrXCg49" target="_blank" class="glass-card"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+            <a href="https://sticker.ly/user/diwyank" target="_blank" class="glass-card"><i class="fas fa-sticky-note"></i> Stickerly</a>
+        </main>
+
+        <div class="bgmi-card glass-card" onclick="copyBGMI()">
+            <i class="fas fa-gamepad"></i>
+            <span id="bgmi-text">BGMI ID: 5882897278</span>
+            <i class="fas fa-copy copy-icon"></i>
         </div>
-
-        <h1>@diwyank</h1>
-
-        <p>
-            A curious mind exploring coding, psychology, and the universe.  
-            I enjoy cricket, chess, books, and creative expression.
-        </p>
     </div>
 
-    <!-- CARDS -->
-    <div class="grid">
+    <footer>
+        <p>Made by a curious person</p>
+    </footer>
 
-        <a href="https://www.instagram.com/diwyankk" target="_blank">Instagram</a>
-        <a href="https://t.me/Anavvww" target="_blank">Telegram</a>
-        <a href="https://x.com/anavvww" target="_blank">Twitter</a>
-        <a href="https://github.com/anavvww" target="_blank">GitHub</a>
-        <a href="mailto:diwyankk@gmail.com">Gmail</a>
-        <a href="https://m.facebook.com/diwyankk/" target="_blank">Facebook</a>
-        <a href="https://www.reddit.com/user/Longjumping_Cookie93" target="_blank">Reddit</a>
-        <a href="https://pin.it/2IsQMo3qR" target="_blank">Pinterest</a>
-        <a href="https://sticker.ly/user/diwyank" target="_blank">Stickerly</a>
-        <a href="https://maps.app.goo.gl/w6KXQHFZ8BGrXCg49" target="_blank">Maps</a>
-
-        <div onclick="copyBGMI()">BGMI ID: 5882897278</div>
-
-    </div>
-
-    <footer>Made by a curious person</footer>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
